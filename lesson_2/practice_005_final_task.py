@@ -9,6 +9,13 @@ entertainment = 200
 # Calculate the total monthly expenses and determine the
 # percentage of rent relative to the total expenses.
 
+expenses = rent + utilities + groceries + entertainment
+rentPercentage = int((rent / expenses) * 100)
+
+print(expenses)
+print(rentPercentage)
+
 # Hint: to count the percentage of rent, count total monthly
 # expenses first, then divide expenses for rent by the total
 # expenses and multiply by 100.
+# int = converts the specified value into an integer number
