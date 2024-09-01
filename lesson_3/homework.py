@@ -10,7 +10,7 @@
 # Example Input: "Alice"
 # Example Output: "Hello, Alice!"
 name = input("Enter yor name: ")
-print(f"????")
+print(f"Hello, [name]!")
 
 # ---------------------------------------------------------------------
 # Exercise 2: Greeting with User's Favorite Activity
