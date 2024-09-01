@@ -24,6 +24,14 @@ print(f"Hello, [name]!")
 # Favorite Activity: hiking
 # Example Output: "Hello, Emily! Enjoy hiking!"
 
+###user = input("Enter your name: ")
+###favorite_activity = input("Enter your favorite activity: ")
+###print('Hello, ' + user + '!' +  ' Enjoy ' + favorite_activity + '!')
+
+user = input("Enter your name: ")
+favorite_activity = input("Enter your favorite activity: ")
+result = 'Hello, {}! Enjoy {}!'.format(user, favorite_activity)
+print(result)
 
 # ---------------------------------------------------------------------
 # Exercise 3: Membership Cards
@@ -38,6 +46,10 @@ print(f"Hello, [name]!")
 # Name: Emily
 # Example Output: "Welcome, Emily! Your name in uppercase is: EMILY!"
 
+member = input("Enter your name: ")
+upper = member.upper()
+update = "Welcome, {}! Your name in uppercase is: {}!".format(member, upper)
+print (update)
 
 # ---------------------------------------------------------------------
 # Exercise 4: User Profile Creation
@@ -54,6 +66,18 @@ print(f"Hello, [name]!")
 # Name: John Smith
 # Age: 28
 
+first_name = input("Enter you first name: ")
+last_name = input("Enter you last name: ")
+age = input("Enter you age: ")
+
+first_name_title = first_name.title()
+last_name_title = last_name.title()
+official_age = ('Age: ' + age)
+
+profile_summary = 'Name: {} {} \nAge: {}'.format(first_name_title, last_name_title, age)
+
+
+print (profile_summary)
 
 # ---------------------------------------------------------------------
 # Exercise 5: Text message limits
@@ -65,7 +89,11 @@ print(f"Hello, [name]!")
 # an f-string. This character count will help users ensure their
 # messages fit within the allowed limit.
 
+message = input('Enter a message: ')
+character_count = (str(len(message)))
+message_count = f"There are {character_count} characters in this message."
 
+print (message_count)
 # ---------------------------------------------------------------------
 # Exercise 6: Text Transformation Game
 # Create a text transformation game. Ask the user
@@ -75,7 +103,10 @@ print(f"Hello, [name]!")
 # Example Input: "Hello, world!"
 # Example Output: "H*ll*, w*rld!"
 sentence = input("Enter a sentence: ")
-transformed_sentence = sentence.replace('a', '*')
+#vowel = 'a', 'e', 'i', 'o', 'u'
+transformed_sentence = sentence.replace('a, e , i , o, u','*')
+print(transformed_sentence)
+
 
 
 # ------------------------------# ---------------------------------------------------------------------
@@ -89,6 +120,7 @@ transformed_sentence = sentence.replace('a', '*')
 # Expected output:
 # Name: Lucy Smith
 # Age: 28
+
 
 
 # ---------------------------------------------------------------------
