@@ -199,18 +199,14 @@ print(number)  # will print 159
 
 # Print the result for all four digits
 
-
-digit_1 = number % 10
-number = number // 10
-
 digit_2 = number % 10
 number = number // 10
 
 digit_3 = number % 10
 number = number // 10
 
-digit_4 = number % 10
-number = number // 10
+digit_4 = number
+
 
 print(digit_1)
 print(digit_2)
