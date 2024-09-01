@@ -18,6 +18,10 @@ text = input("Enter the text to be formatted: ")
 
 # Expected output:
 # Uppercase: HELLO WORLD
+print('Uppercase: ' + text.upper())
 # Lowercase: hello world
+print('Lowercase: ' + text.lower() )
 # Title: Hello World
-# Lenght: 11
+print('Title: ' + text.title())
+# Length: 11
+print('Length: ' + str(len(text)))
