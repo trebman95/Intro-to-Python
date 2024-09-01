@@ -22,18 +22,18 @@ print(total_cost)
 
 average_speed = 60
 hours_available = 4
-total_distance = ??? # calculate here
-print(???)  # print the result
+total_distance = 60 * 4 # calculate here
+print(total_distance)  # print the result
 
 # ---------------------------------------------------------------------
 # Exercise 2 - Pizza Slices
 # A pizza is cut into 8 equal slices. Calculate and print how many
 # slices each person will get if there are 4 people sharing the pizza.
 
-pizza_slices = ???
-people = ???
-slices_per_person = ???
-print(???)
+pizza_slices = 8
+people = 4
+slices_per_person = pizza_slices / people
+print(slices_per_person)
 
 # ---------------------------------------------------------------------
 # Exercise 3 - Shopping Discount
@@ -46,15 +46,24 @@ print(???)
 # The formula to count the discounted price:
 # multiply the original price by the discount percentage and divide by 100.
 
+original_price = 80
+discount_percentage = 0.20
+discount_price = (original_price * discount_percentage) / 100
+final_price = original_price - discount_price
+
+print (final_price)
 
 # ---------------------------------------------------------------------
 # Exercise 4 - Temperature Conversion
 # You are designing a weather app and need to convert temperature
 # from Celsius to Fahrenheit for display. Convert a given
 # temperature and print the result.
-# To convert Celsis to Fahrenheit you need to multiply
+# To convert Celsius to Fahrenheit you need to multiply
 # the temperature in Celsius by 9/5 and add 32 to the result
 
+celsius = 72
+fahrenheitConv = ((celsius * 9/5) + 32)
+print (fahrenheitConv)
 
 # ---------------------------------------------------------------------
 # Exercise 5 - Gardening
@@ -64,6 +73,10 @@ print(???)
 # To calculate the area of a circle, multiply π (~3.141) with the square of
 # the circle's radius.
 
+radius = 3.5
+pi = 3.141
+area = pi * (radius ** 2)
+print (area)
 
 # ---------------------------------------------------------------------
 # Exercise 6 - Convert Temperature
@@ -74,6 +87,9 @@ print(???)
 # temperature for display.
 # As an example, if the temperature is 24.8ºC, you need to print 24.
 
+temp = 24.8
+floatConv = int(temp)
+print (floatConv)
 
 # ---------------------------------------------------------------------
 # Exercise 7 - Baking Cookies
@@ -82,6 +98,11 @@ print(???)
 # print the number of chocolate chips in each cookie and the
 # remaining chips.
 
+chocoChips = 17
+cookies = 5
+chips = chocoChips % cookies
+
+print(chips)
 
 # ---------------------------------------------------------------------
 # Exercise 8 - Fix the Code - Event total earnings
@@ -99,13 +120,20 @@ print(???)
 #
 # For the values provided we are expecting a total earning of 750000,
 # however the code is not working correctly. Can you fix it?
-1st_event_participants = 250
-2nd_event_participants = 500
-ticket_$ = 1000
 
-total_earnings = (1st_event_total + 2nd_event_total) * ticket_$
+##1st_event_participants = 250
+##2nd_event_participants = 500
+##ticket_$ = 1000
+
+##total_earnings = (1st_event_total + 2nd_event_total) * ticket_$
+##print(total_earnings)
+
+first_event_participants = 250
+second_event_participants = 500
+ticket = 1000
+
+total_earnings = (first_event_participants + second_event_participants) * ticket
 print(total_earnings)
-
 
 # ---------------------------------------------------------------------
 # Exercise 9 - Fix the Code - Student age mean
@@ -125,12 +153,20 @@ print(total_earnings)
 #
 # For these ages, we expect an age mean of 15.0, but your code
 # is returning 36.3. Fix the code to print the correct value.
+
+##student_1_age = 15
+##student_2_age = 17
+##student_3_age = 13
+
+##students_age_mean = student_1_age + student_2_age + student_3_age / 3
+##print(students_mean_age)
+
 student_1_age = 15
 student_2_age = 17
 student_3_age = 13
 
-students_age_mean = student_1_age + student_2_age + student_3_age / 3
-print(students_mean_age)
+students_age_mean = (student_1_age + student_2_age + student_3_age) / 3
+print(students_age_mean)
 
 # ---------------------------------------------------------------------
 # Challenge (OPTIONAL!): Separating Digits of a Number
@@ -154,15 +190,16 @@ number = 1597
 digit_1 = number % 10
 number = number // 10
 
-# print(digit_1) # will print 7
-# print(number)  # will print 159
+print(digit_1) # will print 7
+print(number)  # will print 159
 
 # If you repeat this operation with the second, the third and
 # the fourth digits, you will be able to get all the digits.
 # Your code here
 
 # Print the result for all four digits
-print(digit_1)
-print(digit_2)
-print(digit_3)
-print(digit_4)
+
+###print(digit_1)
+###print(digit_2)
+###print(digit_3)
+###print(digit_4)
