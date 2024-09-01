@@ -9,7 +9,7 @@
 #
 # Example Input: "Alice"
 # Example Output: "Hello, Alice!"
-name = input("Enter yor name: ")
+name = input("Enter your name: ")
 print(f"Hello, [name]!")
 
 # ---------------------------------------------------------------------
