@@ -1,14 +1,13 @@
-# Exercise 6: Text Transformation Game
-# Create a text transformation game. Ask the user
-# to enter a sentence. Replace all vowels with '*'. Display the
-# modified sentence.
-#
-# Example Input: "Hello, world!"
-# Example Output: "H*ll*, w*rld!"
-sentence = input("Enter a sentence: ")
-vowel = 'a', 'e', 'i', 'o', 'u'
-transformed_sentence = sentence.replace('aeiouAEIOU','*')
-print(transformed_sentence)
+# Exercise 8: Miles to Kilometers Conversion
+# Write a program that converts a distance in miles to kilometers.
+# Take the distance in miles as input, convert it to kilometers
+# using the formula miles * 1.6, and display the
+# result using f-strings.
 
+# Example Input: 10
+# Example Output: 10 miles is approximately 16.0 kilometers.
 
-
+# We are converting the input string to float:
+# Input: float("1.23")
+# Output: 1.23
+miles = float(input("Enter distance in miles: "))

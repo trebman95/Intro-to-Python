@@ -115,12 +115,21 @@ print(transformed_sentence)
 # Use string slicing and string methods to extract the name and the age
 # and print the result formatted.
 #
-# data = "lucy smith:28"
+data = "lucy smith:28"
 #
 # Expected output:
 # Name: Lucy Smith
 # Age: 28
 
+enter_name = data[0:4]
+enter_age =  data[11:14]
+
+full_name = input('Enter your name: ')
+your_age = input('Enter your age: ')
+
+
+print('Name: {enter_name}'.format(enter_name = data[0:10]))
+print('Age: {enter_age}'.format(enter_age =  data[11:14]))
 
 
 # ---------------------------------------------------------------------
