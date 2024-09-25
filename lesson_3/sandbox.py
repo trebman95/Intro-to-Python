@@ -1,20 +1,20 @@
-# Exercise 8: Miles to Kilometers Conversion
-# Write a program that converts a distance in miles to kilometers.
-# Take the distance in miles as input, convert it to kilometers
-# using the formula miles * 1.6, and display the
-# result using f-strings.
+# Exercise 9: Workouts calculator
+# Write a Python program that asks the user to input the number
+# of minutes spent on three different exercises: cardio, strength
+# training, and yoga using the input() function. Convert the input
+# strings to integers using the int() function. Calculate the
+# total time spent on workouts by summing up the minutes from all
+# three activities. Based on the total workout time, provide a
+# motivational message using an f-string that encourages the user
+# to stay consistent and reach their fitness goals. Display the
+# motivational message to the user.
 
-# Example Input: 10
-# Example Output: 10 miles is approximately 16.0 kilometers.
+cardio = int(input('Enter your minutes on cardio:'))
+strength_training = int(input('Enter your minutes on strength training:'))
+yoga = int(input('Enter your minutes on yoga:'))
 
-# We are converting the input string to float:
-# Input: float("1.23")
-# Output: 1.23
+total_time = cardio + strength_training + yoga
 
+good_job = f'You have worked out for {total_time} minutes total, Keep it up!'
 
-miles = float(input("Enter distance in miles: "))
-
-formula = miles * 1.6
-result = f'{miles} miles is approximately {formula} kilometers'
-
-print(result)
+print(good_job)

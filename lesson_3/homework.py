@@ -164,6 +164,16 @@ print(result)
 # to stay consistent and reach their fitness goals. Display the
 # motivational message to the user.
 
+cardio = int(input('Enter your minutes on cardio:'))
+strength_training = int(input('Enter your minutes on strength training:'))
+yoga = int(input('Enter your minutes on yoga:'))
+
+total_time = cardio + strength_training + yoga
+
+good_job = f'You have worked out for {total_time} minutes total, Keep it up!'
+
+print(good_job)
+
 
 # ---------------------------------------------------------------------
 # Challenge 1 (OPTIONAL!): Reverse the negative integer -324 and keep
