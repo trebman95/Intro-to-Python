@@ -147,6 +147,10 @@ print('Age: {enter_age}'.format(enter_age =  data[11:14]))
 # Output: 1.23
 miles = float(input("Enter distance in miles: "))
 
+formula = miles * 1.6
+result = f'{miles} miles is approximately {formula} kilometers'
+
+print(result)
 
 # ---------------------------------------------------------------------
 # Exercise 9: Workouts calculator

@@ -10,4 +10,11 @@
 # We are converting the input string to float:
 # Input: float("1.23")
 # Output: 1.23
+
+
 miles = float(input("Enter distance in miles: "))
+
+formula = miles * 1.6
+result = f'{miles} miles is approximately {formula} kilometers'
+
+print(result)
