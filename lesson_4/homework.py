@@ -149,6 +149,14 @@ print(f"Your tax amount is ${tax_amount}")
 # Print the calculated ticket price for the given age.
 
 # <Your code here>
+age = int(input("Enter your age: "))
+
+if 3 <= age <= 12:
+    print("Ticket price is $10")
+elif 13 <= age <= 64:
+    print("Ticket price is $20")
+elif age >= 65:
+    print("Ticket price is $15")
 
 # ---------------------------------------------------------------------
 # Exercise 9: Password Strength Checker
@@ -164,6 +172,13 @@ print(f"Your tax amount is ${tax_amount}")
 password = input("Enter your password: ")
 
 # <Your code here>
+
+if len(password) < 8:
+    print("Weak password.")
+elif 8 <= len(password) <= 12:
+    print("Moderate password")
+else:
+    print("Strong password")
 
 # ---------------------------------------------------------------------
 # CHALLENGE (OPTIONAL): Course Enrollment Eligibility

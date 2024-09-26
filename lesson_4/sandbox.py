@@ -1,27 +1,20 @@
-# Exercise 7: Exercise 7: Tax Bracket Calculator
-# You're building a tax calculation system. Write a program that
-# takes a person's annual income as input. Use conditionals
-# to determine their tax bracket based on the following rules:
-from lesson_4.homework import tax_amount
+# Exercise 9: Password Strength Checker
+# Create a program that takes a password as input and checks its
+# strength based on the following rules:
 
-# - If income is less than $40,000, tax rate is 10%.
-# - If income is between $40,000 and $100,000 (inclusive), tax rate is 20%.
-# - If income is greater than $100,000, tax rate is 30%.
+# If the password is less than 8 characters, print "Weak password."
+# If the password is 8 to 12 characters long, print "Moderate password."
+# If the password is more than 12 characters, print "Strong password
 
-# Remember that a tax rate of 10% can be represented as 10/100 or 0.1
+# You can use len() function to get the length of a given string.
 
-# Print the calculated tax amount for the given income.
-annual_income = float(input("Enter your annual income: "))
+password = input("Enter your password: ")
 
 # <Your code here>
-if annual_income < 40000:
-    tax_rate = 0.1
-elif 40000 <= annual_income <= 100000:
-    tax_rate = 0.2
-else:
-    tax_rate = 0.3
 
-tax_amount = annual_income * tax_rate
-
-# Print tax amount
-print(f"Your tax amount is ${tax_amount}")
+if len(password) < 8:
+    print("Weak password.")
+elif 8 <= len(password) <= 12:
+    print("Moderate password")
+elif len(password) >= 12:
+    print("Strong password")
