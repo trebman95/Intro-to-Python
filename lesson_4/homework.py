@@ -23,6 +23,12 @@ else:
 # Do not forget that the input() function returns a string value and
 # you need to convert it so you can use the value as a number.
 
+score = int(input('Enter your score: '))
+
+if score >= 50:
+    print("Pass")
+else:
+    print("Fail")
 # <Your code here>
 
 # ---------------------------------------------------------------------
@@ -40,6 +46,14 @@ else:
 
 gpa = float(input("Enter your GPA: "))
 
+if gpa >= 3.5:
+    print("Congratulations, you're eligible for a scholarship!")
+elif 3.0 <= gpa <= 3.5:
+    print("You're on the waiting list.")
+else:
+    print("Keep up the good work.")
+
+
 # <Your code here>
 
 # ---------------------------------------------------------------------
@@ -51,7 +65,13 @@ gpa = float(input("Enter your GPA: "))
 original_price = float(input("Enter product original price: "))
 discount_percentage = float(input("Enter discount percentage: "))
 
-discounted_price = # calculate the discounted price here
+discounted_amount = original_price * (discount_percentage / 100)
+discounted_price = original_price - discounted_amount
+
+if discounted_price < 50:
+    print("Great deal!")
+else:
+    print("Might want to wait for a better offer")
 
 # <Your code here>
 
@@ -61,6 +81,13 @@ discounted_price = # calculate the discounted price here
 # program that takes two movie ratings as input. If both ratings
 # are above 7, print "Let's watch both!". Otherwise,
 # print "Let's just pick one."
+first_rating = int(input("Enter first movie rating: "))
+second_rating = int(input("Enter second movie rating: "))
+
+if first_rating > 7 and second_rating > 7:
+    print("Let's watch both!")
+else:
+    print("Let's just pick one.")
 
 # <Your code here>
 

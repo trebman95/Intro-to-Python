@@ -1,13 +1,16 @@
-# Exercise 1: Temperature Classification
-# You're developing a weather application. Write a program that takes
-# a temperature in Fahrenheit as input. If the temperature is above
-# 85°F, print "Hot day ahead!".
-temperature = int(input("Enter the temperature in Fahrenheit: "))
+# Exercise 5: Movie Night Decision
+# You and your friends are deciding on a movie to watch. Write a
+# program that takes two movie ratings as input. If both ratings
+# are above 7, print "Let's watch both!". Otherwise,
+# print "Let's just pick one."
+first_rating = int(input("Enter first movie rating: "))
+second_rating = int(input("Enter second movie rating: "))
 
-# <Your code here>
-if temperature > 85:
-    print('Hot day ahead!')
+if first_rating > 7 and second_rating > 7:
+    print("Let's watch both!")
 else:
-    print('Where is my jacket?')
+    print("Let's just pick one.")
+
+
 
 
