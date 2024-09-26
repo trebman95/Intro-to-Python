@@ -10,6 +10,10 @@
 temperature = int(input("Enter the temperature in Fahrenheit: "))
 
 # <Your code here>
+if temperature > 85:
+    print('Hot day ahead!')
+else:
+    print('Where is my jacket?')
 
 # ---------------------------------------------------------------------
 # Exercise 2: Grade Classifier
