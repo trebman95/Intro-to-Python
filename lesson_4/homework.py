@@ -98,6 +98,15 @@ else:
 # (high or low) as input. If they're happy and hungry, recommend
 # a fancy restaurant. If they're sad and hungry, recommend comfort food.
 # For other cases, recommend a casual dining place.
+mood = input("Enter your mood: ")
+hunger = input("Enter you hunger level: ")
+
+if mood == 'happy' and hunger == 'high':
+    print("I recommend a fancy restaurant")
+elif mood == 'sad' and hunger == 'high':
+    print("I recommend comfort food")
+else:
+    print("I recommend a casual dining place")
 
 # <Your code here>
 
@@ -117,6 +126,14 @@ else:
 annual_income = float(input("Enter your annual income: "))
 
 # <Your code here>
+if annual_income < 40000:
+    tax_rate = 0.1
+elif 40000 <= annual_income <= 100000:
+    tax_rate = 0.2
+else:
+    tax_rate = 0.3
+
+tax_amount = annual_income * tax_rate
 
 # Print tax amount
 print(f"Your tax amount is ${tax_amount}")
@@ -190,11 +207,11 @@ course_code = course_code.upper()
 student_grade = student_grade.upper()
 
 # Extract the last three characters of the course code (use string slicing)
-course_suffix =  # your code here
+#course_suffix =  # your code here
 
 # Check course code and grade to determine eligibility
-if course_suffix == "101":
-    ...  # <Your code here>
-elif course_suffix == "202":
-    ...  # <Your code here>
+#if course_suffix == "101":
+    #...  # <Your code here>
+#elif course_suffix == "202":
+    #...  # <Your code here>
 # <Your code here>
