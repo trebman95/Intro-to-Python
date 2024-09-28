@@ -13,6 +13,14 @@
 # Input: -3 => Output: 3
 # Input: 5 => Output: 5
 
+my_number = int(input("Enter an integer value: "))
+
+if my_number < 0:
+    my_number = abs(my_number)
+    print(my_number)
+else:
+    print(my_number)
+
 
 # ---------------------------------------------------------------------
 
@@ -23,6 +31,17 @@
 # If the number is divisible of 7, print “Go”
 # For numbers which are divisible of 3 and 7, print “BinGo”
 # Otherwise, print the original number: “{number} is just a number”
+
+bingo_num = int(input('Enter a number: '))
+
+if bingo_num % 3 == 0 and bingo_num % 7 == 0:
+    print("BinGo")
+elif bingo_num % 3 == 0:
+    print("Bin")
+elif bingo_num % 7 == 0:
+    print("Go")
+else:
+    print(f"{bingo_num} is just a number")
 
 
 # ---------------------------------------------------------------------
@@ -36,6 +55,19 @@
 # Example:
 # x = 1, y = 5, z = 3 => Output: 3
 
+x = int(input('Enter x value: '))
+y = int(input('Enter y value: '))
+z = int(input('Enter z value: '))
+
+if (x > y) and (x < z) or (x < y) and (x > z):
+    middle_num = x
+elif (y > x) and (y < z) or (y < x) and (y > z):
+    middle_num = y
+else:
+    middle_num = z
+
+print(f'{middle_num} is the middle number')
+
 
 # ---------------------------------------------------------------------
 
@@ -47,6 +79,13 @@
 # It should print True if the number is a palindrome and False if it is not.
 #
 # Palindrome number: 121, 898
+
+num = input('Enter a number: ')
+
+if num == num[::-1]:
+    print("True")
+else:
+    print("False")
 
 
 # ---------------------------------------------------------------------
@@ -61,4 +100,18 @@
 # sentence or word.
 #
 # Example: "tcefreP!" -> Perfect!
+
+glitch_str = input("Enter you glitch word: ")
+reversed_str = glitch_str[::-1]
+corrected_str = ""
+
+if reversed_str and reversed_str[0] in "!.,":
+    corrected_str = reversed_str[1:] + reversed_str[0]
+else:
+    corrected_str = reversed_str
+
+
+print(corrected_str)
+
+
 
