@@ -8,3 +8,9 @@
 # Write a program that will print True if the word is a palindrome
 # and False if it is not.
 
+original = input("Enter a word: ")
+
+if original == original[::-1]:
+    print("True")
+else:
+    print("False")

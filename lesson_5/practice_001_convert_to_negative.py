@@ -6,3 +6,8 @@
 # 5 => -5
 # -1 => -1
 
+number = 5
+
+if number > 0:
+    number = - number
+    print(number)
