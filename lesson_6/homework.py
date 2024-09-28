@@ -41,10 +41,12 @@ list_3 = [
 # - From List 3: Retrieve the age of the last friend you put in the list.
 
 # Name of second friend
-# second_friend_name = list_2[???]
+second_friend_name = list_2[1]
+print(second_friend_name)
 
 # Age of the last friend of the list
-# last_friend_age = list_3[???][???]
+last_friend_age = list_3[1][1]
+print(last_friend_age)
 
 # ---------------------------------------------------------------------
 # Task 3. Remove elements from a List
