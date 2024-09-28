@@ -53,14 +53,17 @@ print(last_friend_age)
 
 # From the lists provided, remove the requested elements. Easy peazy.
 
-# cities = ["Houston", "Dallas", "Austin"]
-# fruits = ["apple", "banana", "orange"]
+cities = ["Houston", "Dallas", "Austin"]
+fruits = ["apple", "banana", "orange"]
 
 # Remove Austin from cities without using its index
-# cities.remove(???)
+cities.remove("Austin")
 
 # Remove the last element from fruits using negative indexes
-# ??? fruits[???]
+del fruits[-1]
+
+print(cities)
+print(fruits)
 
 # ---------------------------------------------------------------------
 # Task 4. Verify if an element exists in a list
@@ -68,12 +71,14 @@ print(last_friend_age)
 # Given the provided list, write code that prints `YES` if the list contains the word `cheese`
 
 # The list
-# pantry = ["ham", "bread", "cheese"]
+pantry = ["ham", "bread", "cheese"]
 
 # Write code that prints YES if the list contains "cheese".
 
-# if ??? in ???:
-    # print('YES')
+if "cheese" in pantry:
+    print('YES')
+else:
+    print('NOPE')
        
 # ---------------------------------------------------------------------
 # Task 5. Sorting and Reversing
