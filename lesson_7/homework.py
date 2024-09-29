@@ -12,10 +12,10 @@
 # Complete the following code in such a way that this loop prints the characters 
 # of `name` one at a time.
 
-# name = "Joseph"
+name = "Joseph"
 
-# for ??? in ???:
-    # print(???)
+for char in name:
+    print(char)
 
 # ---------------------------------------------------------------------
 # Task 2. Create a basic `for` loop with a counter
@@ -23,14 +23,14 @@
 # Complete the following code in such a way that the loop increments the counter
 # and prints the number of characters in `name`name at the end.
 
-# name = 'Tom'
-# counter = ???
+name = 'Tom'
+counter = 0
 
-# for ??? in ???:
-    # counter = ???
+for char in name:
+    counter += 1
 
 # This should print '3'
-# print(counter)
+print(counter)
 
 # ---------------------------------------------------------------------
 # Task 3. Create a basic 'while' loop
@@ -47,11 +47,11 @@ This should print:
 4
 5
 """
-# counter = ???
+counter = 0
 
-# while counter ???:
-    # counter = ???
-    # print(counter)
+while counter < 5:
+    counter += 1
+    print(counter)
 
 # ---------------------------------------------------------------------
 # Task 4. Exit a loop using break 🛑
@@ -59,15 +59,15 @@ This should print:
 # Take the previous example, and modify it so you exit the loop after five iterations, 
 # but this time do it using break.
 
-# counter = ???
+counter = 0
 
-# while ???:
-    # counter = ???
+while counter < 5:
+    counter += 1
 
-    # if ???:
-        # ???
+    if counter > 5:
+       break
         
-    # print(counter)
+    print(counter)
 
 # ---------------------------------------------------------------------
 # Task 5. Range
@@ -78,13 +78,16 @@ This should print:
 # Figure out the values required for range() to generate the expected output.
 
 # 0, 1, 2, 3, 4, 5 (use only one argument)
-# range(???)
+arg = range(6)
+print(list(arg))
 
 # 0, 1, 2, 3, 4, 5 (use two arguments: start and end)
-# range(???)
+two_arg = range(0, 6)
+print(list(two_arg))
 
 # Odd numbers between 0 and 10: 1, 3, 5, 7, 9
-# range(???)
+odd = range(1, 11, 2)
+print(list(odd))
 
 # ---------------------------------------------------------------------
 # Task 6. Using range() in a loop
@@ -93,8 +96,8 @@ This should print:
 
 # Complete the following code so it prints the even numbers between 0 and 10;
 
-# for ??? in range(???):
-    # print(???)
+for even in range(2, 12, 2):
+    print(even)
 
 
 # Exercises 🏋🏻
