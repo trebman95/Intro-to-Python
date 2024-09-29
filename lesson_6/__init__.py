@@ -1,26 +1,41 @@
-# Task 7. Aggregators and Helpers
+# Exercise 3. The Steps Tracker 👟
 
-# Given a list of numbers, use helpers and aggregators to answer the questions:
+# Walking is a great way to improve one's health, and it can be fun!
+# Doctors recommend 10,000 steps per day! You would like to know how many steps are YOU taking per day and per week.
 
-# - What's the lowest number?
-# - What's the highest number?
-# - What's the sum of all the numbers in the list?
-# - How many times is the number 9 in the list?
-# - How many total elements are in the list?
+# Write a program that will ask you the number of steps taken each day of the week, for one week.
+# The program should put the step counts in a list, where index 0 is the number for Monday,
+# index 1 is the number for Tuesday, and so on.
 
-numbers = [6, 34, 17, 9, 2, 11, 57, 9, 32]
+# Once you have all the steps counts, answer the following questions:
+# - How many steps you took on Wednesday?
+# - How many steps you took on the work days (Mon - Fri)?
+# - How many steps total did you take over the whole week?
+# - What was the least number of steps you took on a day?
+# - What was the most number of steps you took on a day?
 
-# Lowest number
-print(min(numbers))
+monday = input('Steps for Monday: ')
+tuesday = input('Steps for Tuesday: ')
+wednesday = input('Steps for Wednesday: ')
+thursday = input('Steps for Thursday: ')
+friday = input('Steps for Friday: ')
+saturday = input('Steps for Saturday: ')
+sunday = input('Steps for Sunday: ')
 
-# Highest number
-print(max(numbers))
+steps = [monday, tuesday, wednesday, thursday, friday, saturday, sunday]
 
-# Sum of everything
-print(sum(numbers))
+# Steps on Wednesday
+print(f'Steps on Wednesday is {steps[2]}')
 
-# Count number 9s
-print(numbers.count(9))
+# Steps on the work days
+work_days_steps = steps[0:5]
+print({sum(work_days_steps)})
 
-# Total number of elements
-print(len(numbers))
+# Steps over the whole week
+print(f'Steps over the whole week is {sum(steps)}')
+
+# Least number of steps
+print(f'Least number of steps is {min(steps)}')
+
+# Highest number of steps
+print(f'Highest number of steps is {max(steps)}')

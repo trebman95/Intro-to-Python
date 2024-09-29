@@ -177,23 +177,23 @@ print(len(numbers))
 # - Use print() at the end, to show the user's biography.
 
 # Declare an empty list
-# user_data = []
+user_data = []
 
 # Gather user input
-# name = input("Name: ")
-# age = input("Age: ")
-# city = input("City: ")
+name = input("Name: ")
+age = input("Age: ")
+city = input("City: ")
 
 # Add user input to the list
-# user_data.???(name)
-# user_data.???(age)
-# user_data.???(city)
+user_data.append(name)
+user_data.append(age)
+user_data.append(city)
 
 # Declare your template. Use list elements as values.
-# biography = f"???"
+biography = f"My name is {name}, I'm {age} years old and I was born in {city}."
 
 # Show the user's biography
-# print(biography)
+print(biography)
 
 # ---------------------------------------------------------------------
 # Exercise 2. The Card Deck ♦️♥️♠️♣️
@@ -206,31 +206,33 @@ print(len(numbers))
 # 🔥 Tip: You might want to stitch them together first.
 
 # Here are the card decks.
-# numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
-# faces = ['J', 'Q', 'K']
+numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+faces = ['J', 'Q', 'K']
 
 # Concatenate them first.
-# card_deck = ???
+card_deck = numbers + faces
 
 # Print out the numbers 1 to 6.
-# print(card_deck[???])
+print(card_deck[0:6])
 
 # Print out the last 3. Do it using POSITIVE indexes.
-# print(card_deck[???])
+print(card_deck[10:13])
 
 # Print out the last 3 (same as before), but using NEGATIVE indexes.
-# print(card_deck[???])
+print(card_deck[-3:])
 
 # Print out everything EXCEPT the first and last.
-# print(card_deck[???])
+print(card_deck[1:-1])
+#print(card_deck[1:12])
 
 # What would you use so the printout includes the following:
 # Hint: It's every third card of the full deck.
 # ['1', '4', '7', '10', 'K']
-# print(card_deck[???])
+print(card_deck[::3])
 
 # Print out the EVEN numbers. No faces.
-# print(???)
+print(card_deck[1::2])
+#print(card_deck[1:10:2])
 
 # ---------------------------------------------------------------------
 # Exercise 3. The Steps Tracker 👟
@@ -247,33 +249,33 @@ print(len(numbers))
 # - How many steps you took on the work days (Mon - Fri)?
 # - How many steps total did you take over the whole week?
 # - What was the least number of steps you took on a day?
-# - What was the most number of steps you took on a day? 
+# - What was the most number of steps you took on a day?
 
-# monday = input('Steps for Monday: ')
-# tuesday = input('Steps for Tuesday: ')
-# wednesday = input('Steps for Wednesday: ')
-# thursday = input('Steps for Thursday: ')
-# friday = input('Steps for Friday: ')
-# saturday = input('Steps for Saturday: ')
-# sunday = input('Steps for Sunday: ')
+monday = input('Steps for Monday: ')
+tuesday = input('Steps for Tuesday: ')
+wednesday = input('Steps for Wednesday: ')
+thursday = input('Steps for Thursday: ')
+friday = input('Steps for Friday: ')
+saturday = input('Steps for Saturday: ')
+sunday = input('Steps for Sunday: ')
 
-# steps = [???]
+steps = [monday, tuesday, wednesday, thursday, friday, saturday, sunday]
 
 # Steps on Wednesday
-# print(steps[???])
+print(f'Steps on Wednesday is {steps[2]}')
 
 # Steps on the work days
-# work_days_steps = steps[???]
-# print(???(work_days_steps))
+work_days_steps = steps[0:5]
+print({sum(work_days_steps)})
 
 # Steps over the whole week
-# print(???(steps))
+print(f'Steps over the whole week is {sum(steps)}')
 
 # Least number of steps
-# print(???(steps))
+print(f'Least number of steps is {min(steps)}')
 
 # Highest number of steps
-# print(???(steps))
+print(f'Highest number of steps is {max(steps)}')
 
 # ---------------------------------------------------------------------
 # Exercise 4. Bonus Round: The Speech Reverser and Counter 🎤
