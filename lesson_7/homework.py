@@ -114,12 +114,12 @@ for even in range(2, 12, 2):
 # - Create a loop to iterate through characters of my_string. 
 # - If the character is a digit (`if character in numbers`) print it.
 
-# my_string = 's0m3 str1ng w1th numb3r5'
-# numbers = '1234567890'
+my_string = 's0m3 str1ng w1th numb3r5'
+numbers = '1234567890'
 
-# for ??? in ???:
-    # if ??? in ???:
-    #     print(character)
+for char in my_string:
+    if char in numbers:
+        print(char)
 
 
 # Part two: Modify the code to print the first digit only
