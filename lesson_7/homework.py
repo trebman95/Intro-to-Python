@@ -131,16 +131,16 @@ for char in my_string:
 # As a simple practice, you have been provided with a famous quote. 
 # Your task is to count and display the total number of vowels in this quote.
 
-# quote = "Life is like riding a bicycle. To keep your balance, you MUST keep moving."
-# vowel_count = 0
+quote = "Life is like riding a bicycle. To keep your balance, you MUST keep moving."
+vowel_count = 0
 
-# for ??? ??? ???:
+for vowel in quote:
     # 'A' and 'a' are different in python, so we include both upper and lowercase
     # vowels in our comparison string to account for this difference.
-    # if ??? ??? 'aeiouAEIOU':
-        # vowel_count += ???
+    if vowel in 'aeiouAEIOU':
+        vowel_count += 1
 
-# print(f"The number of vowels in the quote is: {vowel_count}")
+print(f"The number of vowels in the quote is: {vowel_count}")
 
 # ---------------------------------------------------------------------
 # Exercise 3. Sum of all Digits 🔢
@@ -150,15 +150,15 @@ for char in my_string:
 
 # Hint: You can put the numbers you find into a list (cast as `int`) and use `sum()` on the list at the end.
 
-# mixed_string = "abc123xyz456"
-# digits = "0123456789"
-# found_digits = ???
+mixed_string = "abc123xyz456"
+digits = "0123456789"
+found_digits = []
 
-# for char in mixed_string:
-    # if char in ???:
-        # found_digits.a???(int(char))
+for char in mixed_string:
+    if char in digits:
+        found_digits.append(int(char))
 
-# print(f"The total sum of numbers in the string is: {sum(found_digits)}")
+print(f"The total sum of numbers in the string is: {sum(found_digits)}")
 
 # ---------------------------------------------------------------------
 # Exercise 4. Password Strength Checker
