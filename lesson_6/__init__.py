@@ -1,13 +1,26 @@
-# Task 4. Verify if an element exists in a list
+# Task 7. Aggregators and Helpers
 
-# Given the provided list, write code that prints `YES` if the list contains the word `cheese`
+# Given a list of numbers, use helpers and aggregators to answer the questions:
 
-# The list
-pantry = ["ham", "bread", "cheese"]
+# - What's the lowest number?
+# - What's the highest number?
+# - What's the sum of all the numbers in the list?
+# - How many times is the number 9 in the list?
+# - How many total elements are in the list?
 
-# Write code that prints YES if the list contains "cheese".
+numbers = [6, 34, 17, 9, 2, 11, 57, 9, 32]
 
-if "cheese" in pantry:
-    print('YES')
-else:
-    print('NOPE')
+# Lowest number
+print(min(numbers))
+
+# Highest number
+print(max(numbers))
+
+# Sum of everything
+print(sum(numbers))
+
+# Count number 9s
+print(numbers.count(9))
+
+# Total number of elements
+print(len(numbers))

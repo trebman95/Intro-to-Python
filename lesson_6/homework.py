@@ -85,20 +85,22 @@ else:
 
 # Given the provided list, write code that sorts and reverses it, as required.
 
-# numbers = [6, 34, 17, 9, 2, 11, 57, 9, 32]
+numbers = [6, 34, 17, 9, 2, 11, 57, 9, 32]
 
 # Write code that sorts the list in ascending order without disturbing the original.
-# sorted_numbers = ???(numbers)
+sorted_numbers = sorted(numbers)
+print(sorted_numbers)
 
 # Write code that reverses (flips) the list without disturbing the original.
 # Remember that in this case, casting is required.
-# reversed_numbers = ???(???(numbers))
+reversed_numbers = list(reversed(numbers))
+print(reversed_numbers)
 
 # Write code that sorts the list in place, modifying the original.
-# numbers.s???()
+numbers.sort()
 
 # Write code that reverses (flips) the list in place, modifying the original.
-# numbers.r???()
+numbers.reverse()
 
 # ---------------------------------------------------------------------
 # Task 6. Stitching and Slicing
@@ -113,14 +115,15 @@ else:
 
 # Now, write python code that prints a slice from 'full_week' with the work days.
 
-# work_days = ['mon', 'tue',  'wed', 'thu', 'fri']
-# rest_days = ['sat', 'sun']
+work_days = ['mon', 'tue',  'wed', 'thu', 'fri']
+rest_days = ['sat', 'sun']
 
 # Concatenate work_days and rest_rays
-# full_week = ???
+full_week = work_days + rest_days
+print(full_week)
 
 # Slice with the work days
-# print(full_week[???])
+print(full_week[0:5])
 
 # ---------------------------------------------------------------------
 # Task 7. Aggregators and Helpers
@@ -133,22 +136,22 @@ else:
 # - How many times is the number 9 in the list?
 # - How many total elements are in the list?
 
-# numbers = [6, 34, 17, 9, 2, 11, 57, 9, 32]
+numbers = [6, 34, 17, 9, 2, 11, 57, 9, 32]
 
 # Lowest number
-# print(???(numbers))
+print(min(numbers))
 
 # Highest number
-# print(???(numbers))
+print(max(numbers))
 
 # Sum of everything
-# print(???(numbers))
+print(sum(numbers))
 
 # Count number 9s
-# print(numbers.???(???))
+print(numbers.count(9))
 
 # Total number of elements
-# print(???(numbers))
+print(len(numbers))
 
 ## Exercises 🏋🏻
 
