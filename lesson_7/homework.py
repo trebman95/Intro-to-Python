@@ -168,14 +168,14 @@ print(f"The total sum of numbers in the string is: {sum(found_digits)}")
 
 # Create a Python program to check the strength of a list of passwords and count how many are strong.
 
-# passwords = ['Passw0rd', 'hello', 'strongPass1', 'weak']
-# strong_password_count = 0
+passwords = ['Passw0rd', 'hello', 'strongPass1', 'weak']
+strong_password_count = 0
 
-# for ??? ??? ???:
-    # if ???(password) >= 8:
-        # strong_password_count ??? 1
+for password in passwords:
+    if len(password) >= 8:
+        strong_password_count += 1
 
-# print(f"Number of strong passwords: {strong_password_count}")
+print(f"Number of strong passwords: {strong_password_count}")
 
 # ---------------------------------------------------------------------
 # Exercise 5. The Red Crayon 🖍️
