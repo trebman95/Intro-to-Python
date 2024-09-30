@@ -185,13 +185,13 @@ print(f"Number of strong passwords: {strong_password_count}")
 
 # Use a while loop to simulate this scenario.  As soon as you find the "Red" crayon, stop the loop.
 
-# colors = ["Blue", "Yellow", "Green", "Red", "Purple", "Orange"]
-# index = 0
+colors = ["Blue", "Yellow", "Green", "Red", "Purple", "Orange"]
+index = 0
 
 # This should basically say: while the current color being evaluated is 
 # different than "Red", increment to the next color and try again.
-# while colors[index] ??? "Red":
-    # print(f"Found {colors[index]} crayon. Still looking for Red.")
-    # index ??? 1
+while colors[index] == "Red":
+    print(f"Found {colors[index]} crayon. Still looking for Red.")
+    index += 1
 
-# print("Found the Red crayon!")
+print("Found the Red crayon!")
