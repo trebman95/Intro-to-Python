@@ -190,7 +190,7 @@ index = 0
 
 # This should basically say: while the current color being evaluated is 
 # different than "Red", increment to the next color and try again.
-while colors[index] == "Red":
+while colors[index] != "Red":
     print(f"Found {colors[index]} crayon. Still looking for Red.")
     index += 1
 
