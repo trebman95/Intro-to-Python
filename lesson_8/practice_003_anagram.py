@@ -6,3 +6,13 @@
 # is_anagram('bus', 'sub') => should return True
 # is_anagram('map', 'cap') => should return False
 
+first_word = input('Enter first word: ')
+second_word = input('Enter second word: ')
+
+if len(first_word) != len(second_word):
+    print(False)
+elif sorted(first_word) == sorted(second_word):
+    print(True)
+else:
+    print(False)
+
