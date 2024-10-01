@@ -15,6 +15,11 @@
 
 arr = [5, 2, 9, 1, 5, 6]
 # Your code here
+arr.sort()
+
+two_lowest = arr[:2]
+
+print(two_lowest)
 
 # ---------------------------------------------------------------------
 
@@ -32,6 +37,13 @@ arr = [5, 2, 9, 1, 5, 6]
 
 file_name = "My Summer Photos 2023"
 # Your code here
+fixed_file_name = ""
+
+for char in file_name:
+    if char != " ":
+        fixed_file_name += char
+
+    print(fixed_file_name)
 
 # ---------------------------------------------------------------------
 
@@ -48,9 +60,12 @@ file_name = "My Summer Photos 2023"
 n = 5
 
 # Initialize 'result' variable to 0. This variable will hold the sum.
+result = 0
 
 # Iterate through the range starting from 1 up to 'number + 1'.
-
+for i in range(1, n + 1):
+    result = result + i
+print(result)
 # Add the current value of 'i' to 'result'
 
 # Print the sum of integers from 1 to 'number'
@@ -75,6 +90,14 @@ n = 5
 # Use a for loop to iterate over every letter and conditional statements to check the condition
 # Use the count() method (think how it can help you solve this problem!)
 
+word = input('Enter a word: ')
+
+for char in word:
+    if word.count(char) > 1:
+        print(False)
+    else:
+        print(True)
+    break
 
 # ---------------------------------------------------------------------
 
@@ -97,8 +120,14 @@ n = 5
 string = "312"
 
 # Initialize an empty string called 'result' to store the result
+result = " "
 
 # Loop through each character in the string
+for char in string:
+   current_num = int(char)
+   result += char * current_num
+
+print(result)
 
 # Inside the loop, turn the character into a number using int()
 # and store it as a current_num variable
