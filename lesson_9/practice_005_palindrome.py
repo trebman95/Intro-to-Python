@@ -9,10 +9,21 @@
 
 # Hint: The following code might be useful to determine if a word is a palindrome.
 
-reversed_word = word[::-1]
+def palindrome(word):
+    reversed_word = word[::-1]
 
-if word == reversed_word:
+    if word == reversed_word:
    # Word IS a palindrome
-else:
+       return True
+    else:
    # Word is NOT a palindrome
+      return False
+
+word = input('Enter a word: ')
+
+if palindrome(word):
+    print(f'{word} is a palindrome')
+else:
+    print(f'{word} is NOT a palindrome')
+
 
