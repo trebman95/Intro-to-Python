@@ -3,12 +3,18 @@
 
 # Basic Function
 # Define a basic function that only prints Hello. Create the definition using def and the call that executes it.
+def hello():
+    print('Hello')
 
+hello()
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Basic Function with Parameters
 # Define a basic function that prints a greeting taking a given name.
+def take_that(name):
+    print(f'Hello {name}!')
 
+take_that('Tre')
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Basic Function with Default Values
@@ -21,6 +27,10 @@
 # Prints: Hello, Tom!
 # greeting('Tom')
 
+def greeting(name = 'stranger'):
+    print(f'Hello {name}!')
+
+greeting()
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Multiple Parameters
