@@ -31,6 +31,7 @@ def greeting(name = 'stranger'):
     print(f'Hello {name}!')
 
 greeting()
+greeting('Tom')
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Multiple Parameters
@@ -42,6 +43,11 @@ greeting()
 # Prints (default values might be useful): The sum of 1 + 0 = 1
 # add(1)
 
+def add (num1, num2):
+    result = num1 + num2
+    print(f'the sum of {num1} + {num2} = {result}')
+
+add(5,10)
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Parameters out of order
