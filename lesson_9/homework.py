@@ -76,6 +76,16 @@ full_name(last_name = 'Mendela', first_name = 'Nelson')
 
 # Tip: Validator functions return True / False which we can use in conditionals to do things like print a message.
 
+def validator(word, length = 8):
+    return len(word) > length
+
+words = ['banana', 'apple', 'orange', 'grapes', 'kiwi', 'Tennessee']
+
+for word in words:
+    if validator(word):
+        print(f'{word} is longer than 8 characters')
+
+print(validator('Tennessee'))
 # ----------------------------------------------------------------------------------------------------------------------
 
 # You're going to revisit some of the algorithms you've already solved. But this time, there's a twist! Your challenge
