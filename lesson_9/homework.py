@@ -1,6 +1,7 @@
 # HOMEWORK: Functions
 # Read carefully until the end before you start solving the exercises.
 
+
 # Basic Function
 # Define a basic function that only prints Hello. Create the definition using def and the call that executes it.
 def hello():
@@ -61,6 +62,11 @@ add(5,10)
 # Is there anything you can add to the line below, so the function also prints "Nelson Mandela"?
 # full_name("Mandela", "Nelson")
 
+def full_name(first_name,last_name):
+   print(f'{first_name} {last_name}')
+
+full_name('Nelson', 'Mendela')
+full_name(last_name = 'Mendela', first_name = 'Nelson')
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Returning Values
