@@ -135,9 +135,23 @@ fizzbuzz(15)
 # - Check if the lengths are equal. If they're NOT equal, return False (anagrams are always same length).
 # - Sort both strings. If the sorted versions are equal, they're anagrams!
 
+def anagram(str1, str2):
+    if len(str1) == len(str2):
+        return True
+
+    if len(str1) != len(str2):
+        return False
+
+    if sorted(str1) == sorted(str2):
+        return True
+
 # Test your function with these strings
 test_str1 = 'abcde'
 test_str2 = 'edcba'
+
+print(anagram('abcde', 'edcba'))
+print(anagram('cat', 'tac'))
+print(anagram('dog', 'good'))
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -153,9 +167,17 @@ test_str2 = 'edcba'
 # - return result
 
 # Define your function here
+def find_max(numbers):
+    result = numbers[0]
+
+    for number in numbers:
+        if number > result:
+           result = number
+
+    return result
 
 # Test the function with a sample list of numbers.
-
+print(find_max([1,2,3,4,5]))
 # Output should be the maximum number in the list.
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -171,4 +193,15 @@ test_str2 = 'edcba'
 
 # Define a function is_even_odd(number) here
 
+def is_even_odd(number):
+    if number % 2 == 0:
+        print('Even')
+    else:
+        print('Odd')
+
 # Test the function calling it using a variety of numbers like: 1, 10, 5.5, 9
+
+is_even_odd(1)
+is_even_odd(10)
+is_even_odd(5.5)
+is_even_odd(9)
