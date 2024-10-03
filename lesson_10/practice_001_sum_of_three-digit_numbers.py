@@ -14,3 +14,13 @@
 
 # Pre-code:
 def sum_of_three(number):
+    result = 0
+
+    for i in range(3):
+        result = result + (number % 10)
+        number = number // 10
+
+    return result
+
+print(sum_of_three(349))
+
