@@ -1,5 +1,6 @@
 # HOMEWORK: Functions
 # Read carefully until the end before you start solving the exercises.
+from lesson_7.homework import numbers
 
 
 # Basic Function
@@ -105,7 +106,19 @@ print(validator('Tennessee'))
 # - If the number is a multiple of 5, the function should return: Buzz
 # - Otherwise, the function should return the number.
 
+def fizzbuzz(number):
+    if number % 3 == 0 and number % 5 == 0:
+        print('FizzBuzz')
+    elif number % 3 == 0:
+        print('Fizz')
+    elif number % 5 == 0:
+        print('Buzz')
+    else:
+       print(number)
 # Call the function here
+fizzbuzz(3)
+fizzbuzz(5)
+fizzbuzz(15)
 
 # ----------------------------------------------------------------------------------------------------------------------
 
