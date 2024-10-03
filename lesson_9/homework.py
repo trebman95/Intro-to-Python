@@ -1,6 +1,5 @@
 # HOMEWORK: Functions
 # Read carefully until the end before you start solving the exercises.
-from lesson_7.homework import numbers
 
 
 # Basic Function
