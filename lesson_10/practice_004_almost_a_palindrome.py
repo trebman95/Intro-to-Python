@@ -15,3 +15,13 @@
 
 # Pre-code
 def is_almost_palindrome(s):
+    for i in range(len(s)):
+        current_string = s[:i] + s[i + 1:]
+        if current_string == current_string[::-1]:
+            return True
+
+    return False
+
+
+print(is_almost_palindrome("rakdar"))
+print(is_almost_palindrome("radario"))
