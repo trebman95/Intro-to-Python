@@ -22,5 +22,11 @@ def sum_of_three(number):
 
     return result
 
+#def sum_of_three(number):
+#    sum = 0
+#    for char in str(number):
+#        sum += int(character)
+#    return int(sum)
+
 print(sum_of_three(349))
 

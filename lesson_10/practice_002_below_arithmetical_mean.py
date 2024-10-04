@@ -17,3 +17,10 @@
 # Pre-code
 def below_arithmetical_mean(arr):
     arithmetical_mean = sum(arr) / len(arr)
+    result = []
+    for i in arr:
+       if i < arithmetical_mean:
+           result.append(i)
+    return result
+
+print(below_arithmetical_mean([1,3,5,6,4,10,2,3]))
