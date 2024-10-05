@@ -5,10 +5,20 @@
 
 # Basic Class
 
-# - Create an empty class HouseForSale
-# - Create two instances.
-# - Add number_of_rooms and price as instance attributes.
+class HouseForSale: # - Create an empty class HouseForSale
+    pass
+
+house1 = HouseForSale() # - Create an instances.
+house1.number_of_rooms = 5 # - Add number_of_rooms and price as instance attributes.
+house1.price = 400000
+
+house2 = HouseForSale() # - Create an instance.
+house2.number_of_rooms = 4 # - Add number_of_rooms and price as instance attributes.
+house2.price = 270000
+
 # - Create print statements that show the attribute values for the instances.
+print(f"House 1: Number of rooms - {house1.number_of_rooms}, Price - {house1.price}")
+print(f"House 2: Number of rooms - {house2.number_of_rooms}, Price - {house2.price}")
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -20,6 +30,17 @@
 #   - turn_off that prints Computer has Turned Off
 # - Create an instance of the Computer class then call each method.
 
+class Computer:
+    def turned_on(self):
+        print('Computer is turned on')
+
+    def turned_off(self):
+        print('Computer is turned off')
+
+laptop = Computer()
+laptop.turned_on()
+laptop.turned_off()
+
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Constructor with Parameters
@@ -28,6 +49,15 @@
 # - Dog should have a constructor with a name parameter.
 # - Dog should have a method say_name that prints the name of the dog.
 
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def say_name(self):
+        print(f'The name of the dog is {self.name}!')
+
+identify = Dog('James')
+identify.say_name()
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Inheritance
