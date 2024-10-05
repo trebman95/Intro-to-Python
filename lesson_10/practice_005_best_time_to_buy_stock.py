@@ -2,6 +2,7 @@
 # Find the maximum profit you can achieve.
 # You may complete as many transactions as you like (buy one and sell one share of the stock multiple times).
 
+
 # Example: prices = [7,1,5,3,6,4] Return: 7
 # Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
 # Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.
@@ -16,3 +17,12 @@
 
 # Pre-code
 def buy_and_sell_stock(prices):
+    max_profit = 0
+    for i in range((len(prices) - 1)):
+        if prices[i + 1] > prices[i]:
+            max_profit += prices[i + 1] - prices[i]
+    return max_profit
+
+
+prices = [7,1,5,3,6,4]
+print(buy_and_sell_stock(prices))
