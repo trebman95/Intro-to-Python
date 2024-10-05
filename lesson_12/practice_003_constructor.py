@@ -12,13 +12,13 @@ Add a print_document() instance method that receives a string and prints
 it out. The printout should include the brand and model of the printer.
 """
 
-class Printer:
-    def __init__(self, brand, model, capacity):
-        self.brand = brand
-        self.model = model
-        self.capacity = capacity
+class Printer: #class
+    def __init__(self, brand, model, capacity): #constructor
+        self.brand = brand #instance
+        self.model = model #instance
+        self.capacity = capacity # instance
 
-    def print_document(self, document):
+    def print_document(self, document): #instance method
         print(f'{self.brand} {self.model} Printing: {document}')
 
 
