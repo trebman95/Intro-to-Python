@@ -13,3 +13,19 @@
 
 # Bonus: Keep asking for words until the user types "end" OR an empty word.
 
+while True:
+    word = input('Give me a word: ')
+
+    if word == 'end' or word == '':
+        break
+
+    counter = {}
+
+    for char in word:
+        if char in counter.keys():
+            counter[char] += 1
+           #counter[char] = counter[char] + 1
+        else:
+            counter[char] = 1
+
+    print(counter)
