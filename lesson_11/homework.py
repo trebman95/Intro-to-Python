@@ -6,6 +6,21 @@
 # Create an empty dictionary and then add a few of your friends. Make the key their email (can be fake)
 # and the value their name. When you're done, create the same dictionary as a pre-populated dictionary.
 
+
+friends = {}
+friends['joshua@email.com'] = 'Joshua'
+friends['tom@email.com'] = 'Tom'
+
+team = {
+    'name': 'Patriots',
+    'Division': 'AFC East',
+    'Founded': 1970,
+    'Location': 'New England'
+}
+
+print(friends)
+print(team)
+
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Nested Dictionary
@@ -14,6 +29,30 @@
 # The key should be their employee id (an integer from 1-5 will do) and the value should be a dictionary with
 # the name, department and salary of the employee.
 
+employee_data = {
+    1: {'name': 'Jamal',
+        'department': 'HR',
+        'salary': 45000
+        },
+    2: {'name': 'Ashley',
+        'department': 'Finance',
+        'salary': 37000
+        },
+    3: {'name': 'Jenny',
+        'department': 'Logistics',
+        'salary': 67000
+        },
+    4: {'name': 'Thomas',
+        'department': 'IT',
+        'salary': 82000
+        },
+    5: {'name': 'Jacob',
+        'department': 'Marketing',
+        'salary': 55000
+        }
+}
+
+print(employee_data)
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Accessing Values
@@ -23,6 +62,35 @@
 # - Print a list of the employee IDs
 # - Print the employee data for employee with the ID 3.
 # - Loop over the employees and print all their names and salaries.
+
+employee_data = {
+    1: {'name': 'Jamal',
+        'department': 'HR',
+        'salary': 45000
+        },
+    2: {'name': 'Ashley',
+        'department': 'Finance',
+        'salary': 37000
+        },
+    3: {'name': 'Jenny',
+        'department': 'Logistics',
+        'salary': 67000
+        },
+    4: {'name': 'Thomas',
+        'department': 'IT',
+        'salary': 82000
+        },
+    5: {'name': 'Jacob',
+        'department': 'Marketing',
+        'salary': 55000
+        }
+}
+
+print(employee_data.keys())
+print(employee_data[3])
+
+for employee_id, employee_data in employee_data.items():
+    print(f'{employee_data['name']}: {employee_data['salary']}')
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -37,15 +105,40 @@ salaries = {
     'julia' : 17000
 }
 
+
 # We need to increase everyone's salary by 1,000 and also add a new employee joseph with a salary of 18,000.
 # Please come up with a way to do this using update()
 
+#updated_salaries = {
+#    'james' : 11000,
+#    'tom' : 16000,
+#    'ryan' : 17000,
+#    'julia' : 18000,
+#    'joseph': 18000
+#}
+
+salaries.update({name: salary + 1000 for name, salary in salaries.items()})
+
+salaries.update({'joseph': 18000})
+
+print(salaries)
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Deleting Values
 
 # You remember those employees from Updating Values section? Well, Julia got fired, so we need to remove her
 # name from the salaries dictionary. How would you do that?
+
+salaries = {
+    'james' : 10000,
+    'tom' : 15000,
+    'ryan' : 16000,
+    'julia' : 17000
+}
+
+del salaries['julia']
+
+print(salaries)
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -66,6 +159,16 @@ films = {
    2019: "Avengers: Endgame",
    2020: "Bad Boys for Life"
 }
+
+print("Black Panther" in films.values())
+print(2021 in films)
+#print(2021 in films.keys())
+
+position = 1
+
+for year, title in films.items():
+    print(f'{position}: {year} - {title}')
+    position += 1
 
 # ----------------------------------------------------------------------------------------------------------------------
 
