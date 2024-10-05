@@ -13,6 +13,7 @@
 # - Return the sum of the last three digits.
 
 # Pre-code:
+
 def sum_of_three(number):
     result = 0
 

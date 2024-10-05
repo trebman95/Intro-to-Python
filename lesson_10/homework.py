@@ -17,8 +17,36 @@
 # Use floor division to remove the last digit
 
 def multiplication_of_three(number):
-# Your code here
+    result = 1
+    for i in range(3):
+        result = result * (number % 10)
+        number = number // 10
 
+    print(f'result: {result}')
+
+multiplication_of_three(349)
+
+#def multiplication_of_three(number):
+#    mult = 1
+
+#    while number > 0:
+#        digit = number % 10
+#        mult *= digit
+#        number //= 10
+#    return mult
+
+#print(multiplication_of_three(349))
+
+#def multiplication_of_three(number):
+# Your code here
+#   mult = 1
+
+#   for i in str(number):
+#    mult *= int(i)
+
+#   return mult
+
+#print(multiplication_of_three(349))
 
 # ---------------------------------------------------------------------
 
@@ -38,9 +66,17 @@ def multiplication_of_three(number):
 
 def sum_even_and_product_odd(arr):
     # Initialize variables for the sum of even numbers and the product of odd numbers
+    # Your code here
     sum_even = 0
     product_odd = 1
-    # Your code here
+    for num in arr:
+        if num % 2 == 0:
+            sum_even += num
+        else:
+            product_odd *= num
+    return [sum_even, product_odd]
+
+print(sum_even_and_product_odd([1, 2, 3, 4]))
 
 
 # ---------------------------------------------------------------------
@@ -55,8 +91,14 @@ def sum_even_and_product_odd(arr):
 # Input: [1, 5, -2, 4]
 # Output: [-1, -5, 2, -4]
 
+
 def invert_list(arr):
-# Your code here
+    for i in range(len(arr)):
+        arr[i] = -arr[i]
+        return arr
+
+
+print(invert_list([1, 5, -2, 4]))
 
 
 # ---------------------------------------------------------------------
@@ -78,12 +120,14 @@ def max_diff(arr):
     if len(arr) == 0:
         return 0
 
+    return max(arr) - min(arr)
 
 # If the list is not empty,
 # proceed with the rest of the code.
 
 # Your code here
 
+print(max_diff([3, 5, 7, 2]))
 
 # ---------------------------------------------------------------------
 
@@ -104,4 +148,12 @@ def max_diff(arr):
 
 def sum_between_range(arr, min_val, max_val):
 # Your code here
+    total_sum = 0
+    for num in arr:
+        if min_val <= num <= max_val:
+            total_sum += num
+    return total_sum
 
+
+
+print(sum_between_range([3, 2, 1, 4, 10, 8, 7, 6, 9, 5], min_val = 3, max_val = 7))
