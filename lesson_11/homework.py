@@ -289,6 +289,7 @@ for year, album_names in dylan_albums.items():
 # If you want to check if a particular value (in this case, an album name),
 # you need to specify that you're searching within the dictionary's values.
 
+print("Blood on the Tracks" in dylan_albums.values())
 print(1975 in dylan_albums)
 #years = int(input('Enter a year: '))
 #print(years in dylan_albums)
@@ -297,20 +298,27 @@ print(1975 in dylan_albums)
 
 # Exercise 4. Remove duplicates
 # Remove duplicates from the following dictionary:
-# person = {
-#   'first': 'Jeff',
-#   'name': 'Jeff',
-#   'last': 'Smith',
-#   'last_name': 'Smith',
-#   'state': 'CA',
-#   'age': 55
-# }
 
 # Steps:
 # - Create a dict person
+person = {
+   'first': 'Jeff',
+   'name': 'Jeff',
+   'last': 'Smith',
+   'last_name': 'Smith',
+   'state': 'CA',
+   'age': 55
+}
+
 # - Create an empty dictionary result = {}
-# - Make a for loop to iterate over person dictionary
-# - If item’s value not in result dict, add key value part into result.
+
+result = {}
+
+for label, info in person.items():  # - Create an empty dictionary result = {}
+    if info not in result.values(): # - If item’s value not in result dict, add key value part into result.
+        result[label] = info
+
+print(result)
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -319,25 +327,43 @@ print(1975 in dylan_albums)
 # The function should return the name and score of the person with the highest score in the form of a dictionary.
 
 # Sample test_scores dictionary
-# test_scores = {
-#   'James': 83,
-#   'Julia': 91,
-#   'Ryan': 90,
-#   'Maria': 80,
-#   'David': 79,
-#   'Adam': 96,
-#   'Jennifer': 97,
-#   'Susan': 77
-# }
+test_scores = {
+   'James': 83,
+   'Julia': 91,
+   'Ryan': 90,
+   'Maria': 80,
+   'David': 79,
+   'Adam': 96,
+   'Jennifer': 97,
+   'Susan': 77
+ }
 
 #  Find the person with the highest test score and display both their name and score
 
 # Steps:
 # - Define a function called find_max_score that takes one argument, scores_dict, which is a dictionary of names
 #   (as keys) and scores (as values).
-# - Create an empty result variable
-# - Assume the initial maximum score is 0
-# - Iterate over each key-value pair in the test_scores, using the .items() method
-# - Check if the current score (v) is >= to the current maximum score
-# - If so, update the max score and assign the key-value pair to the result
-# - Return result and test the function
+def find_max_score(scores_dict):
+    new_result = {}  # - Create an empty result variable
+    max_score = 0    # - Assume the initial maximum score is 0
+
+    # - Iterate over each key-value pair in the test_scores, using the .items() method
+    for name, score in scores_dict.items():
+        if score >= max_score: # - Check if the current score (v) is >= to the current maximum score
+           max_score = score   # - If so, update the max score and assign the key-value pair to the result
+           new_result = {name: score}
+
+    return new_result   # - Return result and test the function
+
+new_result = find_max_score(test_scores)
+print(f'Output{new_result}')
+
+
+
+
+
+
+
+
+
+
