@@ -65,17 +65,38 @@ identify.say_name()
 # Create the classes that would make the following code possible, with the caveat that
 # both Dog and Cat must inherit from Animal.
 
-# animal = Animal()
-# animal.say_name()   # Prints: I don't have a name yet.
-# animal.speak()      # Prints: I can't speak!
+class Animal:
+    def __init__(self, name = None):
+        self.name = name
+
+    def say_name(self):
+        if self.name:
+            print(self.name)
+        else:
+            print("I don't have a name")
+
+    def speak(self):
+        print(f"I can't speak!")
+
+class Dog(Animal) :
+    def speak(self):
+        print(f"Woof!")
+
+class Cat(Animal):
+    def speak(self):
+        print(f"Meow!")
+
+animal = Animal()
+animal.say_name()   # Prints: I don't have a name yet.
+animal.speak()      # Prints: I can't speak!
 #
-# dog = Dog('Fido')
-# dog.say_name()      # Prints: Fido
-# dog.speak()         # Prints: Woof!
+dog = Dog('Fido')
+dog.say_name()      # Prints: Fido
+dog.speak()         # Prints: Woof!
 #
-# cat = Cat('Max')
-# cat.say_name()      # Prints: Max
-# cat.speak()         # Prints: Meow!
+cat = Cat('Max')
+cat.say_name()      # Prints: Max
+cat.speak()         # Prints: Meow!
 
 # ----------------------------------------------------------------------------------------------------------------------
 
