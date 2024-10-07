@@ -14,7 +14,7 @@ ingredients = ["yeast", "flour", "meat"]
 
 def makeable_recipes(recipes, ingredients):
 
-    makeable_recipes = []
+    matched_recipes = []
     for recipe in recipes:
         can_make = True
         for ingredient in recipe:
@@ -22,8 +22,8 @@ def makeable_recipes(recipes, ingredients):
                 can_make = False
                 break
         if can_make:
-            makeable_recipes.append(recipe)
-    return makeable_recipes
+            matched_recipes.append(recipe)
+    return matched_recipes
 
 print(makeable_recipes(recipes, ingredients))
 
