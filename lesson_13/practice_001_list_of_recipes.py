@@ -13,4 +13,19 @@ ingredients = ["yeast", "flour", "meat"]
 # Output: [["yeast","flour"], ["flour","meat"]]
 
 def makeable_recipes(recipes, ingredients):
-# Your code here
+
+    makeable_recipes = []
+    for recipe in recipes:
+        can_make = True
+        for ingredient in recipe:
+            if ingredient not in ingredients:
+                can_make = False
+                break
+        if can_make:
+            makeable_recipes.append(recipe)
+    return makeable_recipes
+
+print(makeable_recipes(recipes, ingredients))
+
+
+

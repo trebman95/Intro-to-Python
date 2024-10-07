@@ -10,4 +10,16 @@
 def two_sum(arr, target):
     if len(arr) < 2:
         return
-    # Your code here
+
+    partner_dict = {}
+    for num in arr:
+        partner = target - num
+        if partner in partner_dict:
+            return [num, partner]
+        else:
+            partner_dict[num] = True
+
+
+nums = [1, 2, 3, 7, 5]
+target = 10
+print(two_sum(nums, target))
